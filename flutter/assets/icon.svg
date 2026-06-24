@@ -1,9 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
-  <!-- Ceramic Technology hashtag mark -->
-  <!-- vertical bars -->
+  <!-- Ceramic Technology woven hashtag mark -->
+  <defs>
+    <clipPath id="cTR"><rect x="130" y="82" width="44" height="44"/></clipPath>
+    <clipPath id="cBL"><rect x="82" y="130" width="44" height="44"/></clipPath>
+  </defs>
+  <!-- base: verticals, then horizontals on top -->
   <rect x="82"  y="40" width="44" height="176" rx="22" fill="#EE3463"/>
   <rect x="130" y="40" width="44" height="176" rx="22" fill="#3BA0D9"/>
-  <!-- horizontal bars (drawn over) -->
   <rect x="40"  y="82"  width="176" height="44" rx="22" fill="#46B84E"/>
   <rect x="40"  y="130" width="176" height="44" rx="22" fill="#F7CB0F"/>
+  <!-- weave fixes: blue over green (top-right), pink over yellow (bottom-left) -->
+  <g clip-path="url(#cTR)"><rect x="130" y="40" width="44" height="176" rx="22" fill="#3BA0D9"/></g>
+  <g clip-path="url(#cBL)"><rect x="82"  y="40" width="44" height="176" rx="22" fill="#EE3463"/></g>
 </svg>
